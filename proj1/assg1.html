@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Start</title>
+        <link rel='stylesheet' type='text/css' href='des.css'>
+    </head>
+    <body>
+        <h1 id = "fine">Changing Colour</h1>
+        <script>
+            var h = document.getElementById("fine");
+            setInterval(
+                function () {
+                    var ran = Math.floor(Math.random()*16777215).toString(16);
+                    h.style = "color: " + "#"+ ran;
+                },2000);
+        </script>
+    </body>
+</html>
