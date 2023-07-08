@@ -76,10 +76,24 @@ button {
     display: flex;
     flex-direction: row;
     margin: 0px;
+    position: fixed;
+}
+
+.sqbox {
+    width: 200px;
+    height: 200px;
+    margin: 20 50 50 50;
+    border: slategrey;
+    border-color: darkgray;
+    border-radius: 14px;
+}
+
+#tline: on-scrolling(){
+    background-color: white;
 }
 
 .ddlist{
-    margin: 30px;
+    margin: 20px;
 }
 
 #login {
@@ -106,7 +120,7 @@ button {
     font-size: 15px;
     flex: wrap;
     margin-left: 200px;
-    margin-right: 200px;
+    margin-right: 180px;
 }
 #foot {
     margin-top: 0px;
@@ -115,4 +129,6 @@ button {
     flex-direction: row;
     background-color: #ffbc03;
 }
+
+
   
