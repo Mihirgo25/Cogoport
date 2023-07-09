@@ -1,7 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-    font-family: PT Sans;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .yellowcolour{
@@ -13,15 +13,19 @@ body {
 }
 
 .redcolor{
-    color: red;
+    color: #ee3425;
 }
 
 .redbg {
-    background-color: red;
+    background-color: #ee3425;
 }
 
 .yellowbg{
     background-color: yellow;
+}
+
+.greybg {
+    background-color: #e5dfdf;
 }
 
 .ochrebg{
@@ -39,7 +43,7 @@ body {
 .center {
     text-justify: center;
 }
-
+/*Notif*/
 #closenotif {
     width: 50px;
     border-color: red;
@@ -66,14 +70,7 @@ body {
     padding-left: 270px;
 }
 
-button {
-    margin: 5px;
-}
-
-.top:on-hover{
-    color: red;
-}
-
+/*tline*/
 #tline {
     background-color: #fbdb04;
     display: flex;
@@ -81,10 +78,13 @@ button {
     margin: 0px;
     height: 100px;
 }
-
 #nm {
     height: 80px; 
-    margin-right: 90px;
+    margin-right: 50px;
+}
+
+.ddlist{
+    margin: 10px;
 }
 
 #login {
@@ -92,7 +92,346 @@ button {
     display: flex; 
     flex-direction: row;
 }
+.wid150{
+    width: 150px;
+}
+.wid110{
+    width: 110px;
+}
+.wid160{
+    width: 160px;
+}
+.wid230{
+    width: 230px;
+}
 
+#contactinf{
+    margin-right: 40px; 
+    padding-top: 15px; 
+    width: 140px;
+}
+#login div button img{
+    height: 27px; 
+    margin-right: 10px;
+}
+#loginbutton{
+    border-color: #fbdb04; 
+    width: 90px; 
+    height: 35px;
+    padding-bottom:5px;
+}
+#signupbutton{
+    color: white; 
+    width: 80px; 
+    height: 35px; 
+    border-radius: 5px;
+}
+
+button {
+    margin: 5px;
+}
+
+/*banner*/
+#banner {
+    padding-left: 50px;
+    margin: 0px;
+    display: flex; 
+    flex-direction: row; 
+    height: 350px;
+    background-image: url("cogopo.png");
+    background-repeat: no-repeat;
+}
+
+.whats{
+    height: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.whats div input{
+    height: 45px; 
+    width: 300px; 
+    padding-left: 50px; 
+    font-size: 18px; 
+    outline: none; 
+    border-top-right-radius: 50px; 
+    border-bottom-right-radius: 50px; 
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.whats div button{
+    position: absolute;
+    right: 8px;
+    margin-top: 10px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 1px solid gray;
+    outline: none;
+    background: #03e64b;
+    color: white;
+}
+
+.whats button:hover{
+    background: #00ff00a4;
+}
+
+/*Mainbody*/
+
+/*stats*/
+#stats{
+    display: flex; 
+    flex-direction: row; 
+    padding-top: 30px; 
+    padding-bottom: 20px;
+}
+#stats div h1{
+    font-size: 40px; 
+    text-align: center;
+}
+
+/*motto2*/
+#motto2 {
+    display: flex; 
+    flex-direction: row;
+}
+#m2left{
+    margin-top: 50px; 
+    margin-left: 50px;
+}
+
+/*Products*/
+#products h2{
+    text-align: center; 
+    margin-bottom: 20px; 
+    padding-top: 20px; 
+    font-size: 40px; 
+    margin-top: 0px;
+}
+
+
+
+.top:on-hover{
+    color: red;
+}
+.sqbox {
+    width: 180px;
+    height: 180px;
+    margin: 20px;
+    border: 2px solid rgb(181, 197, 181);
+    border-radius: 15px;
+    background-color: white;
+}
+
+.sqbox:hover {
+    border: solid rgb(255, 0, 0);
+}
+
+.sqbox h3{
+    margin-bottom: 3px;
+}
+
+.sqbox p{
+    padding-left: 15px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+}
+
+.sqbox img{
+    width: 80px; 
+    height: 80px; 
+    padding-left: 40px;
+}
+
+/*Trusted By*/
+#trusted{
+    margin-top: 50px; 
+    margin-bottom: 60px;
+}
+#partnerimg{
+    display: flex; 
+    flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#partnerimg div img{
+    width: 100px; 
+    height: 100px; 
+    margin-left: 50px; 
+    margin-right: 50px;
+}
+
+/*Supply Chain at Next Level*/
+#scnl{
+    display: flex; 
+    flex-direction: row; 
+    padding: 30px 0;
+}
+#getstarted{
+    margin-top: 20px; 
+    margin-left: 300px; 
+    width: 130px; 
+    height: 40px; 
+    border-color: #ee3425;
+    border-radius: 5px; 
+    font-weight: 600;
+}
+/*How it works*/
+
+/*Industries*/
+#industries{
+    padding-bottom: 100px; 
+    padding-top: 20px;
+}
+#industries h1{
+    text-align: center; 
+    font-weight: 600
+}
+#imglist{
+    margin-top:50px;
+}
+#imglist img{
+    width: 120px; 
+    height: 150px; 
+    margin-right: 25px; 
+    margin-left: 25px;
+}
+
+/*Book*/
+#book{
+    display: flex; 
+    flex-direction: row; 
+    padding-bottom: 30px; 
+    padding-top: 30px;
+}
+#bkleft{
+    margin-left: 100px;
+}
+#getst {
+    font-size: 15px; 
+    font-weight:600; 
+    background-color: #ee3425; 
+    color: white; 
+    width: 120px; 
+    height: 50px; 
+    border-radius: 5px;
+}
+#bkright{
+    margin-left: 300px;
+}
+
+/*Know More*/
+#growfast{
+    display: flex; 
+    flex-direction: row;
+}
+#gfleft {
+    margin-left: 25px;
+}
+#knowmore2{
+    margin-top: 50px; 
+    margin-left: 700px; 
+    border-color: #ee3425; 
+    border-radius: 5px; 
+    width: 120px; 
+    height: 40px; 
+    padding: 4 16px;
+}
+
+/*Blogs*/
+.blogctnr {
+    display: flex; 
+    flex-direction: row; 
+    border-width: 2px; 
+    border-radius: 5px; 
+    border-color: grey;
+}
+#viewall{
+    font-size: 20px; 
+    margin-left: 575px; 
+    margin-right: 575px; 
+    margin-bottom: 40px;
+}
+
+/*Subscribe*/
+
+#subscribe{
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+#subs{
+    display: flex; 
+    flex-direction: row;
+}
+#subsleft{
+    margin-left: 200px; 
+    width: 70px; 
+    margin-right: 200px;
+}
+#subsright{
+    margin-left: 100px; 
+    margin-top: 20px;
+}
+#subsc input {
+    appearance: none;
+    border: 2px solid black;
+    font-size: inherit;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 5px;
+    width: 300px;
+    height: 30px;
+    margin-right: 0px;
+}
+#subsc input {
+    margin-bottom: 1rem;
+}
+#subsc button {
+    height: 45px;
+    margin-left: 0px;
+    padding-top: 5px;
+    font-weight: 600;
+    width: 120px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/*Ports*/
+
+/*Alllist*/
+.allist {
+    display: flex; 
+    flex-direction: row; 
+    flex: wrap; 
+    padding-bottom: 20px;
+}
+.list{
+    margin-right: 40px; 
+}
+.list a:hover {
+    text-decoration: underline;
+}
+#port1, #port2, #port3 {
+    display: flex; 
+    padding:10px; 
+    flex-direction: column;
+}
+
+/*Foot*/
+
+#foot {
+    margin-top: 0px;
+    display: flex;
+    flex: wrap;
+    flex-direction: row;
+    background-color: #ffbc03;
+}
+#foot a img{
+    width: 20px; margin-top: 20px; margin-left: 10px;
+}
+
+/*Sticky Whatsapp*/
 .float{
 	position:fixed;
 	width:100px;
@@ -119,307 +458,11 @@ button {
     width: 100%;
 }
 
-.whats{
-    height: 50px;
-    position: relative;
-}
-
-.whats input{
-    height: 100%;
-    width: 300px;
-    padding-left: 50px;
-    font-size: 18px;
-    outline: none;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 50px;
-    border: 2px solid coral;
-}
-
-.whats .icon{
-    position: absolute;
-    left: 25px;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 18px;
-}
-
-.whats button{
-    position: absolute;
-    right: -30px;
-    margin-top: 27px;
-    transform: translate(-50%, -50%);
-    padding: 8px 12px;
-    cursor: pointer;
-    border-radius: 50px;
-    border: 1px solid gray;
-    outline: none;
-    background: #03e64b;
-    color: white;
-    transition: 0.3s;
-}
-
-.whats button:hover{
-    background: #00ff00a4;
-}
-
-.sqbox {
-    width: 180px;
-    height: 180px;
-    padding-left: 20px;
-    margin: 20px;
-    border: solid rgb(32, 37, 32);
-    border-width: 2px;
-    border-radius: 15px;
-    background-color: white;
-}
-
-.sqbox:hover {
-    border: solid rgb(255, 0, 0);
-}
-
-.sqbox img{
-    padding-left: 20px;
-    width: 70px;
-    height: 70px;
-}
-
-.h3{
-    padding-left: 15px;
-    font-size: 16px;
-}
-
-.sqbox p{
-    padding-left: 15px;
-}
-
-.ddlist{
-    margin: 20px;
-}
-
-#login {
-    flex-direction: row;
-}
-
-#banner {
-    padding-left: 50px;
-    margin: 0px;
-    background-image: url("cogopo.png");
-    background-repeat: no-repeat;
-}
-
-#whatsappcont {
-    display: flex;
-    flex-direction: row;
-}
-
-.allist {
-    margin-bottom: 0px;
-}
-
-.ctnr {
-    display: flex;
-    flex-direction: row;
-    font-size: 15px;
-    flex: wrap;
-    margin-left: 200px;
-    margin-right: 180px;
-}
-
-#foot {
-    margin-top: 0px;
-    display: flex;
-    flex: wrap;
-    flex-direction: row;
-    background-color: #ffbc03;
-}
-
-.list a:hover {
-    text-decoration: underline;
-}
-
 
 @media only screen and (max-width: 760px){
-    #closenotif {
-        width: 50px;
-        border-color: red;
-        margin: 15px;
-        background-position: right;
-    }
-    
-    #notif {
-        background-color: red;
+    #motto2 {
         display: flex;
-        flex-direction: row;
-        margin: 0px;
-        padding-left: 350px;
-    }
-    
-    #logoy {
-        width: 20px; 
-        height: 20px; 
-        margin-top: 13px; 
-        margin-right: 8px;
-    }
-    
-    #cross {
-        padding-left: 270px;
-    }
-    
-    button {
-        margin: 5px;
-    }
-    
-    .top:on-hover{
-        color: red;
-    }
-    
-    #tline {
-        background-color: #fbdb04;
-        display: flex;
-        flex-direction: row;
-        margin: 0px;
-        height: 100px;
-    }
-    
-    #nm {
-        height: 80px; margin-right: 90px;
-    }
-    
-    #login {
-        float: left; 
-        display: flex; 
-        flex-direction: row;
-    }
-    
-    .float{
-        position:fixed;
-        width:100px;
-        height:100px;
-        top:150px;
-        right:20px;
-        background-color:#dd2a02;
-        color:#FFF;
-        border-radius:5px;
-        text-align:center;
-        font-size:30px;
-        box-shadow: 2px 2px 3px #999;
-        z-index:100;
-    }
-    
-    .my-float{
-        margin-top:16px;
-        color: #03e64b;
-    }
-    
-    .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-    }
-    
-    .whats{
-        height: 50px;
-        position: relative;
-    }
-    
-    .whats input{
-        height: 100%;
-        width: 300px;
-        padding-left: 50px;
-        font-size: 18px;
-        outline: none;
-        font-family: Arial, Helvetica, sans-serif;
-        border-radius: 50px;
-        border: 2px solid coral;
-    }
-    
-    .whats .icon{
-        position: absolute;
-        left: 25px;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 18px;
-    }
-    
-    .whats button{
-        position: absolute;
-        right: -30px;
-        margin-top: 27px;
-        transform: translate(-50%, -50%);
-        padding: 8px 12px;
-        cursor: pointer;
-        border-radius: 50px;
-        border: 1px solid gray;
-        outline: none;
-        background: #03e64b;
-        color: white;
-        transition: 0.3s;
-    }
-    
-    .whats button:hover{
-        background: #00ff00a4;
-    }
-    
-    .sqbox {
-        width: 200px;
-        height: 200px;
-        padding-left: 20px;
-        margin: 20px;
-        border: solid rgb(32, 37, 32);
-        border-width: 2px;
-        border-radius: 15px;
-    }
-    
-    .sqbox:hover {
-        border: solid rgb(255, 0, 0);
-    }
-    
-    .sqbox img{
-        padding-left: 20px;
-    }
-    
-    .sqbox h3{
-        padding: 5px;
-        font-size: 16px;
-    }
-    
-    .ddlist{
-        margin: 20px;
-    }
-    
-    #login {
-        flex-direction: row;
-    }
-    
-    #banner {
-        padding-left: 100px;
-        margin: 0px;
-    }
-    
-    #whatsappcont {
-        display: flex;
-        flex-direction: row;
-    }
-    
-    .allist {
-        margin-bottom: 0px;
-    }
-    
-    .ctnr {
-        display: flex;
-        flex-direction: row;
-        font-size: 15px;
-        flex: wrap;
-        margin-left: 200px;
-        margin-right: 180px;
-    }
-    
-    #foot {
-        margin-top: 0px;
-        display: flex;
-        flex: wrap;
-        flex-direction: row;
-        background-color: #ffbc03;
+        flex-direction: column-reverse;
     }
 }
   

@@ -4,66 +4,69 @@
     <title>Cogoport - Book & Manage Shipments & Cargo Online</title>
     <link rel="icon" type="image/x-icon" href="logo.jpg" style = "border-radius: 2px;">
     <link rel='stylesheet' type='text/css' href='cogo.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e1238485fa.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div id = "notif" class = "redbg">
       <img id = "logoy" src = "logoy.jpg">
       <div id = "notif-txt">
-        <p class = "center" style = "color: white;">Limited Time Offer: Get 15% off on all Cogo Assured Rates.<a class = "yellowcolour">Book Today!</a></p></div>
+        <p class = "center whitecolor">Limited Time Offer: Get 15% off on all Cogo Assured Rates.<a class = "yellowcolour">Book Today!</a></p></div>
       <div id = "cross"><button id = "closenotif" class = "redbg yellowcolour">X</button></div>
     </div>
 
     <div id = "tline" class = "ochrebg">
       <img id = "nm" src="name.png">
-      <div class = "ddlist" id = "ourproducts">
-        <p class = "top"><b>Products</b></p>
-        <img class = "downarrow">
+      <div class = "ddlist wid150" id = "ourproducts">
+        <p class = "top"><b>Products</b><i class="fa-sharp fa-solid fa-caret-down" style="color: #001c4d; width: 5px; margin-left: 10px;"></i></p>
       </div>
-      <div class = "ddlist" id = "partners">
-        <p class = "top"><b>Partners</b></p>
-        <img class = "downarrow">
+      <div class = "ddlist wid150" id = "partners">
+        <p class = "top"><b>Partners</b><i class="fa-sharp fa-solid fa-caret-down" style="color: #001c4d; width: 5px; margin-left: 10px;"></i></p>
       </div>
-      <div class = "ddlist" id = "tools">
-        <p class = "top"><b>Tools</b></p>
-        <img class = "downarrow">
+      <div class = "ddlist wid110" id = "tools">
+        <p class = "top"><b>  Tools</b><i class="fa-sharp fa-solid fa-caret-down" style="color: #001c4d; width: 5px; margin-left: 10px;"></i></p>
       </div>
-      <div class = "ddlist" id = "company">
-        <p class = "top"><b>Company</b></p>
-        <img class = "downarrow">
+      <div class = "ddlist wid160" id = "company">
+        <p class = "top"><b>Company</b><i class="fa-sharp fa-solid fa-caret-down" style="color: #001c4d; width: 5px; margin-left: 10px;"></i></p>
       </div>
-      <div class = "ddlist" id = "knowledgecenter">
-        <p class = "top"><b>Knowledge Center</b></p>
-        <img class = "downarrow">
+      <div class = "ddlist wid230" id = "knowledgecenter">
+        <p class = "top"><b>Knowledge Center</b><i class="fa-sharp fa-solid fa-caret-down" style="color: #001c4d; width: 5px; margin-left: 10px;"></i></p>
       </div>
-      <div class = "ddlist" style = "margin-right: 70px; padding: 10px;">
-        <div id = "contactinf"><b>Contact Us</b></div>
+      <div class = "ddlist" id = "contactinf">
+        <div><b>Contact Us</b></div>
       </div>
       <div id = "login" class = "ddlist">
-        <div><button id = "loginbutton" class = "ochrebg" style = "border-color: #fbdb04; width: 90px;"><img id ="smiley" src="smile.png" style = "height: 30px; margin-right: 10px;">login</button></div>
-        <div><button id = "signupbutton" class = "redbg" style = "color: white; border-color: red; width: 80px; height: 35px; border-radius: 5px; float: right;"><strong>Sign Up</strong></button></div>
+        <div><button id = "loginbutton" class = "ochrebg"><img id ="smiley" src="smile.png">login</button></div>
+        <div><button id = "signupbutton" class = "redbg"><strong>Sign Up</strong></button></div>
       </div>
     </div>
 
-    <div id = "banner"  class = "ochrebg" style = "display: flex; flex-direction: row; height: 350px;">
+    <div id = "banner"  class = "ochrebg">
       <div id = "bannerleft">
         <div id = "motto" style = "padding-top: 20px;">
           <h1>Grow Faster, Go Global.</h1>
           <h5>Strengthen your Supply Chain, and Scale your Business <br> with Reliable Shipping and Cashflows.</h5>
         </div>
         <div id = "message">
-          <h6>Talk to us now!</h6>
+          <h4>Talk to us now!</h4>
           <div class="whats">
-            <i class="fa-brands fa-whatsapp" style="color: #04f11f; position: relative;"></i>
-            <input type="num" placeholder="Enter Your Number">
-            <button type="submit">Get Started</button>
-        </div>
+            <div class = "whitebg" id = "whatsicon" style = "height: 37px; width: 90px; padding-top: 10px; padding-left: 12px; border-top-left-radius: 50px; border-bottom-left-radius: 50px; border: 2px solid black;">
+              <i class="fa-brands fa-whatsapp" style="color: #04f11f; margin-right: 10px; size: 20px;"></i>
+              +91<i class="fa-sharp fa-solid fa-caret-down" style="color: #001c4d; width: 5px; margin-left: 10px"></i>   
+            </div>
+            <div>
+              <input type="num" placeholder="Enter Your Number">
+              <button type="submit" style = "font-weight: 600;">Get Started</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <div id = "mainbody">
-      <div id = "stats" style = "display: flex; flex-direction: row; padding-top: 30px; padding-bottom: 20px;">
+      <div id = "stats">
         <div style = "margin-left: 100px;">
           <h1 class = "redcolor">180+</h1>
           <h4>Countries Served</h4>
@@ -73,7 +76,7 @@
           <h4>Ports Pairs Served</h4>
         </div>
         <div style = "margin-left: 150px;">
-          <h1 class = "redcolor">30000+</h1>
+          <h1 class = "redcolor" >30000+</h1>
           <h4>Tons of Air Cargo Moved</h4>
         </div>
         <div style = "margin-left: 150px;">
@@ -82,8 +85,8 @@
         </div>
       </div>
 
-      <div id = "motto2" class = "creambg" style = "display: flex; flex-direction: row;">
-        <div id = "m2left" style = "margin-top: 50px; margin-left: 50px;">
+      <div id = "motto2" class = "creambg">
+        <div id = "m2left">
           <h1>One Stop Solution <br>for Your Supply Chain</h1>
           Connected Shipping, Finance, and Trade-tech, to Power Global Trade and Supply Chains.
         </div>
@@ -93,173 +96,187 @@
       </div>
 
       <div id = "products" class = "creambg">
-        <h2 style = "text-align: center; margin-bottom: 20px; padding-top: 20px; margin-top: 0px;">Our Products</h2>
+        <h2>Our Products</h2>
         <div class = "Productsdesc" style = "display: flex; flex-direction: row;">
-          <h3 style = "font-size: 25px; margin-right: 100px; padding-top: 20px;">End to End Cross Border<br>Logistics</h3>
+          <h3 style = "font-size: 25px; margin-right: 90px; padding-top: 20px;">End to End Cross Border<br>Logistics</h3>
           <div class = "sqbox">
             <img src = "fcl.png">
-            <h3>Ocean: FCL</h3>
-            <p style = "color: red;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
+            <h3 style = "text-align: center;">Ocean: FCL</h3>
+            <p style = "color: red;text-align: center;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
           </div>
           <div class = "sqbox">
             <img src = "lcl.png">
-            <h3>Ocean: LCL</h3>
-            <p style = "color: red;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
+            <h3 style = "text-align: center;">Ocean: LCL</h3>
+            <p style = "color: red;text-align: center;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
           </div>
           <div class = "sqbox">
             <img src = "ia.png">
-            <h3>International Air</h3>
-            <p style = "color: red;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
+            <h3 style = "text-align: center;">International Air</h3>
+            <p style = "color: red;text-align: center;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
           </div>
           <div class = "sqbox">
             <img src = "cust.png">
-            <h3>Customs, CFS, &<br>Handling</h3>
-            <p style = "color: red;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
+            <h3 style = "text-align: center;">Customs, CFS, &<br>Handling</h3>
+            <p style = "color: red;text-align: center;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
           </div>
         </div>
         <div class = "Productsdesc" style = "display: flex; flex-direction: row;">
           <h3 style = "font-size: 25px; margin-right: 150px; margin-top: 20px;">Domestic Logistics</h3>
           <div class = "sqbox">
             <img src = "ftl.png">
-            <h3>FTL, PTL</h3>
-            <p style = "color: red;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
+            <h3 style = "text-align: center;">FTL, PTL</h3>
+            <p style = "color: red;text-align: center;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
           </div>
           <div class = "sqbox">
             <img src = "rail.png">
-            <h3>Trailer & Rail<br>Container Haulage</h3>
-            <p style = "color: red;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
+            <h3 style = "text-align: center;">Trailer & Rail<br>Container Haulage</h3>
+            <p style = "color: red;text-align: center;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
           </div>
         </div>
         <div class = "Productsdesc" style = "display: flex; flex-direction: row;">
           <h3 style = "font-size: 25px; margin-right: 110px; margin-top: 20px;">Supply Chain Solutions</h3>
           <div class = "sqbox">
             <img src = "ca.png">
-            <h3>CogoAssured</h3>
-            <p style = "color: red;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
+            <h3 style = "text-align: center;">CogoAssured</h3>
+            <p style = "color: red;text-align: center;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
           </div>
           <div class = "sqbox">
             <img src = "df.png">
             <h3>Domestic Fulfillment</h3>
-            <p style = "color: red;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
+            <p style = "color: red;text-align: center;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
           </div>
           <div class = "sqbox">
             <img src = "d2d.png">
-            <h3>Door to Door Shipments</h3>
-            <p style = "color: red;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
+            <h3 style = "text-align: center;">Door to Door Shipments</h3>
+            <p style = "color: red;text-align: center;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
           </div>
           <div class = "sqbox">
             <img src = "ci.png">
-            <h3>Cargo Insurance</h3>
-            <p style = "color: red;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
+            <h3 style = "text-align: center;">Cargo Insurance</h3>
+            <p style = "color: red;text-align: center;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
           </div>
         </div>
         <div class = "Productsdesc" style = "display: flex; flex-direction: row;">
-          <h3 style = "font-size: 25px; margin-right: 150px; margin-top: 20px;">Financial Services</h3>
+          <h3 style = "font-size: 25px; margin-right: 170px; margin-top: 20px;">Financial Services</h3>
           <div class = "sqbox">
             <img src = "pl.png">
-            <h3>Pay Later</h3>
-            <p style = "color: red;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
+            <h3 style = "text-align: center;">Pay Later</h3>
+            <p style = "color: red;text-align: center;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
           </div>
           <div class = "sqbox">
             <img src = "ef.png">
-            <h3>Export Factoring</h3>
-            <p style = "color: #ff0000;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
+            <h3 style = "text-align: center;">Export Factoring</h3>
+            <p style = "color: red;text-align: center;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
           </div>
         </div>
         <div class = "Productsdesc" style = "display: flex; flex-direction: row;">
           <h3 style = "font-size: 25px; margin-right: 150px; margin-top: 20px;">Trade Management<br>Solutions</h3>
           <div class = "sqbox">
             <img src = "fr.png">
-            <h3>Freight Rates &<br>Schedules</h3>
-            <p style = "color: red;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
+            <h3 style = "text-align: center;">Freight Rates &<br>Schedules</h3>
+            <p style = "color: red;text-align: center;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
           </div>
           <div class = "sqbox">
             <img src = "qpq.png">
-            <h3>Quick Premium<br>Quotations</h3>
-            <p style = "color: red;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
+            <h3 style = "text-align: center;">Quick Premium<br>Quotations</h3>
+            <p style = "color: red;text-align: center;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
           </div>
           <div class = "sqbox">
             <img src = "du.png">
-            <h3>Duties & Taxes<br>Calculator</h3>
-            <p style = "color: red;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
+            <h3 style = "text-align: center;">Duties & Taxes<br>Calculator</h3>
+            <p style = "color: red;text-align: center;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
           </div>
           <div class = "sqbox">
             <img src = "gl.png">
-            <h3>Tracking & Visibility</h3>
-            <p style = "color: red;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
+            <h3 style = "text-align: center;">Tracking & Visibility</h3>
+            <p style = "color: red; text-align: center;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
           </div>
         </div>
       </div>
       
-      <div id = "trusted by"  style = "margin-top: 50px; margin-bottom: 60px;">
+      <div id = "trusted">
         <h2 style = "text-align: center;">Trusted By</h2>
-        <div id = "partnerimg" style = "display: flex; flex-direction: row;">
+        <div id = "partnerimg">
           <div>
-            <img src = "tvs.jpeg" style = "width: 100px; height: 100px; margin-left: 70px; margin-right: 50px;">
+            <img src = "tvs.jpeg">
           </div>
           <div>
-            <img src = "tvs.jpeg" style = "width: 100px; height: 100px; margin-left: 50px; margin-right: 50px;">
+            <img src = "tvs.jpeg">
           </div>
           <div>
-            <img src = "tvs.jpeg" style = "width: 100px; height: 100px; margin-left: 50px; margin-right: 50px;">
+            <img src = "tvs.jpeg">
           </div>
           <div>
-            <img src = "tvs.jpeg" style = "width: 100px; height: 100px; margin-left: 50px; margin-right: 50px;">
+            <img src = "tvs.jpeg">
           </div>
           <div>
-            <img src = "tvs.jpeg" style = "width: 100px; height: 100px; margin-left: 50px; margin-right: 50px;">
+            <img src = "tvs.jpeg">
           </div>
           <div>
-            <img src = "tvs.jpeg" style = "width: 100px; height: 100px; margin-left: 50px; margin-right: 50px;">
+            <img src = "tvs.jpeg">
           </div>
         </div>
       </div>
 
-      <div style = "display: flex; flex-direction: row; padding: 30px 0;" class = "yellowbg">
+      <div id = "scnl" class = "ochrebg">
           <div style = "margin-left: 50px;"><h1>Ready to take your Supply Chain to the Next Level?</h1></div>
-          <div><button id = "getstarted" class = "redbg whitecolor" style = "margin-top: 30px; margin-left: 300px; width: 100px; height: 30px; border-radius: 5px;">Get Started</button></div>
+          <div><button id = "getstarted" class = "redbg whitecolor">Get Started<i class="fa-solid fa-diamond-half fa-rotate-180" style="color: #ffffff; margin-left: 10px;"></i></button></div>
       </div>
 
-      <div id = "industries" class = "creambg" style = "padding-bottom: 100px; padding-top: 20px">
-        <h1 style = "margin-left: 500px">Industries Served</h1>
-        <div id = "imglist">
-          <img src = "chemicals.png" style = "width: 120px; height: 150px; margin-right: 25px; margin-left: 25px;">
-          <img src = "pharmaceuticals.png" style = "width: 120px; height: 150px; margin-right: 25px; margin-left: 25px;">
-          <img src = "electronics.png" style = "width: 120px; height: 150px; margin-right: 25px; margin-left: 25px;">
-          <img src = "whitegoods.png" style = "width: 120px; height: 150px; margin-right: 25px; margin-left: 25px;">
-          <img src = "textiles.png" style = "width: 120px; height: 150px; margin-right: 25px; margin-left: 25px;">
-          <img src = "manufacturing.png" style = "width: 120px; height: 150px; margin-right: 25px; margin-left: 25px;">
-          <img src = "agriculture.png" style = "width: 120px; height: 150px; margin-right: 25px; margin-left: 25px;">
+      <div id = "howitworks" style = "background-color: #ffffff; margin-top:30px;">
+        <h1 style = "text-align: center; font-weight: 600;">How it Works</h1>
+        <div id = "buttonoptions" style = "margin-left: 370px">
+          <button class = "ochrebg" id = "forcargo" style = "width: 200px; height: 40px; border-radius:40px;margin:25px;">For Cargo Owners</button>
+          <button class = "greybg" id = "forlogpa" style = "width: 200px; height: 40px; border-radius:40px;margin:25px;">For Logistics Partners</button>
+        </div>
+        <div style = "align-self: center;">
+          <img id = "working" src = "laptop.jpg" style = "width: 400px; height: 250px; align-self: center;">
         </div>
       </div>
 
-      <div id = "book" style = "display: flex; flex-direction: row;">
-        <div id = "bkleft" style = "margin-left: 50px;">
+      <div id = "industries" class = "creambg">
+        <h1>Industries Served</h1>
+        <div id = "imglist">
+          <img src = "chemicals.png">
+          <img src = "pharmaceuticals.png">
+          <img src = "electronics.png">
+          <img src = "whitegoods.png">
+          <img src = "textiles.png">
+          <img src = "manufacturing.png">
+          <img src = "agriculture.png">
+        </div>
+      </div>
+
+      <div id = "book">
+        <div id = "bkleft">
           <h1>Get Started Today</h1>
           <strong>Plan, Book and Finance your shipment in one place.</strong>
           <br>
           <p>Experience how Cogoport`s Global Trade Platform can Turbocharge your Business.</p>
           <br>
-          <button id = "getstarted" style = "font-size: 15px; background-color: red; color: white; width: 120px; height: 50px; border-radius: 5px">Get Started</button>
+          <button id = "getst">Get Started</button>
         </div>
-        <div id = "bkright" style="margin-left: 300px;">
+        <div id = "bkright">
           <img src = "trtech.png" style = "height: 250px;">
         </div>
       </div>
 
       <div id = "knowmore">
-        <div id = "Growfast" class = "redbg" style = "display: flex; flex-direction: row;">
-          <div id = "gfleft" style = "margin-left: 25px;">
+        <div>
+          <img src = "vid2.png" style = "width: 100%">
+        </div>
+        <div id = "growfast" class = "redbg">
+          <div id = "gfleft">
             <h1 class = "whitecolor">Grow Faster with Cogoport</h1>
             <p class = "whitecolor">Know More about Cogoport's Global Trade Platform<sup>TM</sup></p>
           </div>
           <div id = "gfright">
-            <button id = "knowmore2" class = "yellowbg" style="margin-top: 50px; margin-left: 700px; border-color: red; border-radius: 5px">Know More</button>
+            <button id = "knowmore2" class = "yellowbg">Know More<i class="fa-solid fa-diamond-half fa-rotate-180" style="color: #000000; margin-left: 10px;"></i></button>
           </div>
         </div>
       </div>
 
-      <div class = "blogs" style = "display: flex; flex-direction: row; border-width: 2px; border-radius: 5px; border-color: grey;">
+      <div class = "blogs">
         <div class = "blogctnr">
           <img>
           <div class = "blgdesc">
@@ -278,7 +295,7 @@
           </div>
         </div>
 
-        <div class = "blogctnr" style = "border-width: 2px; border-radius: 5px; border-color: grey;">
+        <div class = "blogctnr">
           <img>
           <div class = "blgdesc">
             <div class = "topic">
@@ -296,7 +313,7 @@
           </div>
         </div>
 
-        <div class = "blogctnr" style = "border: grey; border-width: 10px; border-radius: 5px; border-color: grey;">
+        <div class = "blogctnr">
           <img>
           <div class = "blgdesc">
             <div class = "topic">
@@ -315,21 +332,21 @@
         </div>
       </div>
     </div>
-    <button id = "viewall" class = "redbg whitecolor" style = "font-size: 20px; margin-left: 575px; margin-right: 575px; margin-bottom: 40px;">View All</button>
+    <button id = "viewall" class = "redbg whitecolor">View All</button>
 
-    <div id = "subscribe" class = "ochrebg" style = "padding-bottom: 50px;">
-      <div id = "subs"  style = "display: flex; flex-direction: row;">
-        <div id = "subsleft" style = "margin-left: 400px; width: 70px;">
-          <img id = "twoguys" src = "chat.png" style = "width: 150px;">
+    <div id = "subscribe" class = "ochrebg">
+      <div id = "subs">
+        <div id = "subsleft">
+          <img id = "twoguys" src = "chat.png" style = "width: 300px;">
         </div>
-        <div id = "subsright" style = "margin-left: 100px; margin-top: 20px;">
-          <h3>Subscribe to our Newsletter now!</h3>
-          <span>Don't miss out on the latest happenings in the Cogoport!</span>
+        <div id = "subsright">
+          <h3 style = "font-size: 20px;">Subscribe to our Newsletter now!</h3>
+          Don't miss out on the latest happenings in the Cogoport!
           <br>
           <div>
-            <form>
-              <input type = "email" required = "" name = "email" placeholder="Enter your Email Here">
-              <button class = "redbg whitecolor">Subscribe</button>
+            <form name="subsc" id = "subsc">
+              <input name="email" type="email" placeholder="Email" required>
+              <button type="submit" class = "redbg whitecolor">Subscribe<i class="fa-solid fa-arrow-right" style="color: #ffffff; margin-left:5px"></i></button>
             </form>
           </div>
         </div>
@@ -338,13 +355,12 @@
     </div>
 
     <div id = "ports">
-      <div class = "alllist ochrebg" style = "display: flex; flex-direction: row; flex: wrap; padding-bottom: 20px;">
-        <div class = "list" style = "margin-right: 40px; margin-left: 20px;">
+      <div class = "alllist ochrebg">
+        <div class = "list" style = "margin-left: 20px;">
           <h4 class = "underline">Products</h4>
           <a id = "gt">Global Trade Platform</a>
           <br>
           <h5>Cross-border Logistic</h5>
-
           <a id = "ofcl">Ocean: FCL</a>
           <br>
           <a id = "olcl">Ocean: LCL</a>
@@ -379,7 +395,7 @@
           <a></a>
         </div>
 
-        <div class = "list" style = "margin-right: 40px;">
+        <div class = "list">
           <h5>Supply Chain Solutions</h5>
 
           <a id = "ca">CogoAssured</a>
@@ -399,13 +415,11 @@
           <br>
         </div>
 
-        <div class = "list" style = "margin-right: 40px;">
+        <div class = "list">
           <h4 class = "underline">Partners</h4>
-
           <a id = "gp">Global Partners Network</a>
           <br>
           <h5>Our Logistics Providers</h5>
-
           <a id = "ff">Freight Forwarders</a>
           <br>
           <a id = "tp">Transporters</a>
@@ -413,13 +427,12 @@
           <a id = "cstma">Custom Agents</a>
           <br>
           <h5>Partership Program</h5>
-
           <a id = "cp">Channel Partners</a>
           <br>
           <a id = "oa">Overseas Agents</a>
         </div>
 
-        <div class = "list" style = "margin-right: 40px;">
+        <div class = "list">
           <h4 class = "underline">Tools</h4>
           <a id = "rd">Rate Discovery</a>
           <br>
@@ -432,7 +445,7 @@
           <a id = "pta">Personal Trade Assistant</a>
         </div>
 
-        <div class = "list" style = "margin-right: 80px;">
+        <div class = "list">
           <h4 class = "underline">Company</h4>
           <a id = "au">About us</a>
           <br>
@@ -470,8 +483,8 @@
         </div>
       </div>
 
-      <div class = "alllist" style = "background-color: #ffbc03; display: flex; flex-direction: row; flex: wrap; padding-top: 10px">
-        <div class = "list"  style = "display: flex; padding:10px; flex-direction: column; margin-left: 30px; margin-right: 250px;">
+      <div class = "alllist ochrebg" style = "padding-top: 10px">
+        <div id = "port1" class = "list"  style = "margin-left: 30px; margin-right: 250px;">
           <a class = "no">Mandideep(IN) to Port Said West</a><br>
           <a class = "no">Mandideep(IN) to Mombasa</a><br>
           <a class = "no">Mandideep(IN) to Lobito</a><br>
@@ -483,7 +496,7 @@
           <a class = "no">Mandideep(IN) to Port Sudan</a><br>
           <a class = "no">Mandideep(IN) to Istanbul</a><br>
         </div>
-        <div class = "list"  style = "display: flex; padding:10px; flex-direction: column; margin-right: 250px;">
+        <div class = "list" id = "port2" style = "margin-right: 250px;">
           <a class = "no">Mandideep(IN) to Los Angeles</a><br>
           <a class = "no">Mandideep(IN) to Damietta</a><br>
           <a class = "no">Mandideep(IN) to Wellington</a><br>
@@ -495,7 +508,7 @@
           <a class = "no">Mandideep(IN) to Abu Dhabi</a><br>
           <a class = "no">Mandideep(IN) to Auckland</a><br>
         </div>
-        <div class = "list" style = "display: flex; padding:10px; flex-direction: column; margin-right: 30px">
+        <div class = "list" id = "port3" style = "margin-right: 30px">
           <a class = "no">Mandideep(IN) to Kumport</a>
           <br>
           <a class = "no">Mandideep(IN) to Dar es Salaam</a><br>
@@ -511,7 +524,7 @@
       </div>
 
       <div id = "foot">
-        <h6 style = "margin-left: 25px;">© 2023 Cogo Universe PTE. All rights reserved.</h6>
+        <h6 style = "margin-left: 20px;">© 2023 Cogo Universe PTE. All rights reserved.</h6>
         <div class = "ctnr">
           <a class = "no"><h5>Terms &amp; Conditions | </h5></a>
           <a class = "no"><h5>Cookie Policy | </h5></a>
@@ -519,15 +532,15 @@
         </div>
         <div id = "lang">
           <img id = "glb" src = "glb.ico" style = "width: 30px; margin-top: 20px">
-          <a class = "no" style = "color: red;"><u>English</u></a>
+          <a class = "no" style = "color: #ee3425;"><u>English</u></a>
         </div>
-        <a><img id = "linkedin" src = "li.ico" style = "width: 20px; margin-top: 20px; margin-left: 20px;"></a>
-        <a><img id = "fb" src = "fb.ico" style = "width: 20px; margin-top: 20px; margin-left: 10px;"></a>
-        <a><img id = "insta" src = "insta.ico" style = "width: 20px; margin-top: 20px; margin-left: 10px;"></a>
+        <a><img id = "linkedin" src = "li.ico" style ="margin-left:20px;"></a>
+        <a><img id = "fb" src = "fb.ico"></a>
+        <a><img id = "insta" src = "insta.ico"></a>
       </div>
 
     </div>
-    <a class = "float"><i class="fa fa-whatsapp my-float"></i><br><span style = "font-size: 15px;">WhatsApp Us!</span></a>
+    <a class = "float"><i class="fa fa-whatsapp my-float"></i><br style = "height: 0.5rem"><span style = "font-size: 15px; font-weight: 700;">WhatsApp Us!</span></a>
     
   </body>
 </html>
