@@ -5,8 +5,9 @@
     <link rel="icon" type="image/x-icon" href="logo.jpg" style = "border-radius: 2px;">
     <link rel='stylesheet' type='text/css' href='cogo.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
     <script src="https://kit.fontawesome.com/e1238485fa.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -52,7 +53,7 @@
         <div id = "message">
           <h4>Talk to us now!</h4>
           <div class="whats">
-            <div class = "whitebg" id = "whatsicon" style = "height: 37px; width: 90px; padding-top: 10px; padding-left: 12px; border-top-left-radius: 50px; border-bottom-left-radius: 50px; border: 2px solid black;">
+            <div class = "whitebg" id = "whatsicon">
               <i class="fa-brands fa-whatsapp" style="color: #04f11f; margin-right: 10px; size: 20px;"></i>
               +91<i class="fa-sharp fa-solid fa-caret-down" style="color: #001c4d; width: 5px; margin-left: 10px"></i>   
             </div>
@@ -67,19 +68,19 @@
 
     <div id = "mainbody">
       <div id = "stats">
-        <div style = "margin-left: 100px;">
+        <div style = "margin-left: 120px;">
           <h1 class = "redcolor">180+</h1>
           <h4>Countries Served</h4>
         </div>
-        <div style = "margin-left: 150px;">
+        <div style = "margin-left: 120px;">
           <h1 class = "redcolor">10000+</h1>
           <h4>Ports Pairs Served</h4>
         </div>
-        <div style = "margin-left: 150px;">
+        <div style = "margin-left: 120px;">
           <h1 class = "redcolor" >30000+</h1>
           <h4>Tons of Air Cargo Moved</h4>
         </div>
-        <div style = "margin-left: 150px;">
+        <div style = "margin-left: 120px;">
           <h1 class = "redcolor">700000</h1>
           <h4>Containers Moved</h4>
         </div>
@@ -87,8 +88,10 @@
 
       <div id = "motto2" class = "creambg">
         <div id = "m2left">
-          <h1>One Stop Solution <br>for Your Supply Chain</h1>
-          Connected Shipping, Finance, and Trade-tech, to Power Global Trade and Supply Chains.
+          <div>
+            <h1>One Stop Solution <br>for Your Supply Chain</h1>
+            Connected Shipping, Finance, and Trade-tech, to Power Global Trade and Supply Chains.
+          </div>
         </div>
         <div id = "m2right">
           <img id = "spplychain" src = "map.png">
@@ -97,99 +100,109 @@
 
       <div id = "products" class = "creambg">
         <h2>Our Products</h2>
-        <div class = "Productsdesc" style = "display: flex; flex-direction: row;">
-          <h3 style = "font-size: 25px; margin-right: 90px; padding-top: 20px;">End to End Cross Border<br>Logistics</h3>
-          <div class = "sqbox">
-            <img src = "fcl.png">
-            <h3 style = "text-align: center;">Ocean: FCL</h3>
-            <p style = "color: red;text-align: center;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
-          </div>
-          <div class = "sqbox">
-            <img src = "lcl.png">
-            <h3 style = "text-align: center;">Ocean: LCL</h3>
-            <p style = "color: red;text-align: center;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
-          </div>
-          <div class = "sqbox">
-            <img src = "ia.png">
-            <h3 style = "text-align: center;">International Air</h3>
-            <p style = "color: red;text-align: center;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
-          </div>
-          <div class = "sqbox">
-            <img src = "cust.png">
-            <h3 style = "text-align: center;">Customs, CFS, &<br>Handling</h3>
-            <p style = "color: red;text-align: center;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
-          </div>
-        </div>
-        <div class = "Productsdesc" style = "display: flex; flex-direction: row;">
-          <h3 style = "font-size: 25px; margin-right: 150px; margin-top: 20px;">Domestic Logistics</h3>
-          <div class = "sqbox">
-            <img src = "ftl.png">
-            <h3 style = "text-align: center;">FTL, PTL</h3>
-            <p style = "color: red;text-align: center;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
-          </div>
-          <div class = "sqbox">
-            <img src = "rail.png">
-            <h3 style = "text-align: center;">Trailer & Rail<br>Container Haulage</h3>
-            <p style = "color: red;text-align: center;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
+        <div class = "Productsdesc">
+          <div><h4>End to End Cross Border<br>Logistics</h4></div>
+          <div class = "pro">
+            <div class = "sqbox">
+              <img src = "fcl.png">
+              <h3 style = "text-align: center;">Ocean: FCL</h3>
+              <p style = "color: red;">Find out more <i class="fa-solid fa-arrow-right-long" style="color: #ff0000;"></i></p>
+            </div>
+            <div class = "sqbox">
+              <img src = "lcl.png">
+              <h3 style = "text-align: center;">Ocean: LCL</h3>
+              <p style = "color: red;">Find out more <i class="fa-solid fa-arrow-right-long" style="color: #ff0000;"></i></p>
+            </div>
+            <div class = "sqbox">
+              <img src = "ia.png">
+              <h3 style = "text-align: center;">International Air</h3>
+              <p style = "color: red;">Find out more <i class="fa-solid fa-arrow-right-long" style="color: #ff0000;"></i></p>
+            </div>
+            <div class = "sqbox">
+              <img src = "cust.png">
+              <h3 style = "text-align: center;">Customs, CFS, &<br>Handling</h3>
+              <p style = "color: red;">Find out more <i class="fa-solid fa-arrow-right-long" style="color: #ff0000;"></i></p>
+            </div>
           </div>
         </div>
-        <div class = "Productsdesc" style = "display: flex; flex-direction: row;">
-          <h3 style = "font-size: 25px; margin-right: 110px; margin-top: 20px;">Supply Chain Solutions</h3>
-          <div class = "sqbox">
-            <img src = "ca.png">
-            <h3 style = "text-align: center;">CogoAssured</h3>
-            <p style = "color: red;text-align: center;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
-          </div>
-          <div class = "sqbox">
-            <img src = "df.png">
-            <h3>Domestic Fulfillment</h3>
-            <p style = "color: red;text-align: center;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
-          </div>
-          <div class = "sqbox">
-            <img src = "d2d.png">
-            <h3 style = "text-align: center;">Door to Door Shipments</h3>
-            <p style = "color: red;text-align: center;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
-          </div>
-          <div class = "sqbox">
-            <img src = "ci.png">
-            <h3 style = "text-align: center;">Cargo Insurance</h3>
-            <p style = "color: red;text-align: center;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
+        <div class = "Productsdesc">
+          <div><h4>Domestic Logistics</h4></div>
+          <div class = "pro">
+            <div class = "sqbox">
+              <img src = "ftl.png">
+              <h3 style = "text-align: center;">FTL, PTL</h3>
+              <p style = "color: red;">Find out more <i class="fa-solid fa-arrow-right-long" style="color: #ff0000;"></i></p>
+            </div>
+            <div class = "sqbox">
+              <img src = "rail.png">
+              <h3 style = "text-align: center;">Trailer & Rail<br>Container Haulage</h3>
+              <p style = "color: red;">Find out more <i class="fa-solid fa-arrow-right-long" style="color: #ff0000;"></i></p>
+            </div>
           </div>
         </div>
-        <div class = "Productsdesc" style = "display: flex; flex-direction: row;">
-          <h3 style = "font-size: 25px; margin-right: 170px; margin-top: 20px;">Financial Services</h3>
-          <div class = "sqbox">
-            <img src = "pl.png">
-            <h3 style = "text-align: center;">Pay Later</h3>
-            <p style = "color: red;text-align: center;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
-          </div>
-          <div class = "sqbox">
-            <img src = "ef.png">
-            <h3 style = "text-align: center;">Export Factoring</h3>
-            <p style = "color: red;text-align: center;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
+        <div class = "Productsdesc">
+          <div><h4>Supply Chain Solutions</h4></div>
+          <div class = "pro">
+            <div class = "sqbox">
+              <img src = "ca.png">
+              <h3 style = "text-align: center;">CogoAssured</h3>
+              <p style = "color: red;">Find out more <i class="fa-solid fa-arrow-right-long" style="color: #ff0000;"></i></p>
+            </div>
+            <div class = "sqbox">
+              <img src = "df.png">
+              <h3>Domestic Fulfillment</h3>
+              <p style = "color: red;">Find out more <i class="fa-solid fa-arrow-right-long" style="color: #ff0000;"></i></p>
+            </div>
+            <div class = "sqbox">
+              <img src = "d2d.png">
+              <h3 style = "text-align: center;">Door to Door Shipments</h3>
+              <p style = "color: red;">Find out more <i class="fa-solid fa-arrow-right-long" style="color: #ff0000;"></i></p>
+            </div>
+            <div class = "sqbox">
+              <img src = "ci.png">
+              <h3 style = "text-align: center;">Cargo Insurance</h3>
+              <p style = "color: red;">Find out more <i class="fa-solid fa-arrow-right-long" style="color: #ff0000;"></i></p>
+            </div>
           </div>
         </div>
-        <div class = "Productsdesc" style = "display: flex; flex-direction: row;">
-          <h3 style = "font-size: 25px; margin-right: 150px; margin-top: 20px;">Trade Management<br>Solutions</h3>
-          <div class = "sqbox">
-            <img src = "fr.png">
-            <h3 style = "text-align: center;">Freight Rates &<br>Schedules</h3>
-            <p style = "color: red;text-align: center;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
+        <div class = "Productsdesc">
+          <div><h4>Financial Services</h4></div>
+          <div class = "pro">
+            <div class = "sqbox">
+              <img src = "pl.png">
+              <h3 style = "text-align: center;">Pay Later</h3>
+              <p style = "color: red;">Find out more <i class="fa-solid fa-arrow-right-long" style="color: #ff0000;"></i></p>
+            </div>
+            <div class = "sqbox">
+              <img src = "ef.png">
+              <h3 style = "text-align: center;">Export Factoring</h3>
+              <p style = "color: red;">Find out more <i class="fa-solid fa-arrow-right-long" style="color: #ff0000;"></i></p>
+            </div>
           </div>
-          <div class = "sqbox">
-            <img src = "qpq.png">
-            <h3 style = "text-align: center;">Quick Premium<br>Quotations</h3>
-            <p style = "color: red;text-align: center;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
-          </div>
-          <div class = "sqbox">
-            <img src = "du.png">
-            <h3 style = "text-align: center;">Duties & Taxes<br>Calculator</h3>
-            <p style = "color: red;text-align: center;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
-          </div>
-          <div class = "sqbox">
-            <img src = "gl.png">
-            <h3 style = "text-align: center;">Tracking & Visibility</h3>
-            <p style = "color: red; text-align: center;">Find out more <img src = "rtarrow.png" style = "width: 9px; height: 9px;"></p>
+      </div>
+        <div class = "Productsdesc">
+          <div><h4>Trade Management<br>Solutions</h4></div>
+          <div class = "pro">
+            <div class = "sqbox">
+              <img src = "fr.png">
+              <h3 style = "text-align: center;">Freight Rates &<br>Schedules</h3>
+              <p style = "color: red;">Find out more <i class="fa-solid fa-arrow-right-long" style="color: #ff0000;"></i></p>
+            </div>
+            <div class = "sqbox">
+              <img src = "qpq.png">
+              <h3 style = "text-align: center;">Quick Premium<br>Quotations</h3>
+              <p style = "color: red;">Find out more <i class="fa-solid fa-arrow-right-long" style="color: #ff0000;"></i></p>
+            </div>
+            <div class = "sqbox">
+              <img src = "du.png">
+              <h3 style = "text-align: center;">Duties & Taxes<br>Calculator</h3>
+              <p style = "color: red;">Find out more <i class="fa-solid fa-arrow-right-long" style="color: #ff0000;"></i></p>
+            </div>
+            <div class = "sqbox">
+              <img src = "gl.png">
+              <h3 style = "text-align: center;">Tracking & Visibility</h3>
+              <p style = "color: red;">Find out more <i class="fa-solid fa-arrow-right-long" style="color: #ff0000;"></i></p>
+            </div>
           </div>
         </div>
       </div>
@@ -220,17 +233,35 @@
 
       <div id = "scnl" class = "ochrebg">
           <div style = "margin-left: 50px;"><h1>Ready to take your Supply Chain to the Next Level?</h1></div>
-          <div><button id = "getstarted" class = "redbg whitecolor">Get Started<i class="fa-solid fa-diamond-half fa-rotate-180" style="color: #ffffff; margin-left: 10px;"></i></button></div>
+          <div><button id = "getstarted" class = "redbg whitecolor">Get Started<i class="fa-solid fa-play" style="color: rgb(255, 255, 255); margin-left: 10px;"></i></button></div>
       </div>
 
-      <div id = "howitworks" style = "background-color: #ffffff; margin-top:30px;">
-        <h1 style = "text-align: center; font-weight: 600;">How it Works</h1>
-        <div id = "buttonoptions" style = "margin-left: 370px">
-          <button class = "ochrebg" id = "forcargo" style = "width: 200px; height: 40px; border-radius:40px;margin:25px;">For Cargo Owners</button>
-          <button class = "greybg" id = "forlogpa" style = "width: 200px; height: 40px; border-radius:40px;margin:25px;">For Logistics Partners</button>
+      <div id = "howitworks">
+        <h1>How it Works</h1>
+        <div id = "buttonoptions">
+          <button class = "ochrebg" id = "forcargo">For Cargo Owners</button>
+          <button class = "greybg" id = "forlogpa">For Logistics Partners</button>
         </div>
-        <div style = "align-self: center;">
-          <img id = "working" src = "laptop.jpg" style = "width: 400px; height: 250px; align-self: center;">
+        <div class = "stg">
+          <div class = "stage">
+            <div class = "stgbx">
+              <img src = "stg1.png">
+            </div>
+            <div class = "stgbx">
+              <img src = "stg2.png">
+            </div>
+          </div>
+          <div id = "laptopdiv">
+            <img id = "working" src = "laptop.jpg">
+          </div>
+          <div class = "stage">
+            <div class = "stgbx">
+              <img src = "stg3.png">
+            </div>
+            <div class = "stgbx">
+              <img src = "stg4.png">
+            </div>
+          </div>
         </div>
       </div>
 
@@ -267,66 +298,66 @@
         </div>
         <div id = "growfast" class = "redbg">
           <div id = "gfleft">
-            <h1 class = "whitecolor">Grow Faster with Cogoport</h1>
-            <p class = "whitecolor">Know More about Cogoport's Global Trade Platform<sup>TM</sup></p>
+            <h1 class = "whitecolor" style = "font-weight: 700;">Grow Faster with Cogoport</h1>
+            <p class = "whitecolor" style = "font-size: 20px;">Know More about Cogoport's Global Trade Platform<sup>TM</sup></p>
           </div>
           <div id = "gfright">
-            <button id = "knowmore2" class = "yellowbg">Know More<i class="fa-solid fa-diamond-half fa-rotate-180" style="color: #000000; margin-left: 10px;"></i></button>
+            <button id = "knowmore2" class = "yellowbg"><strong>Know More</strong><i class="fa-solid fa-play" style="color: black; margin-left: 10px;"></i></button>
           </div>
         </div>
       </div>
 
-      <div class = "blogs">
-        <div class = "blogctnr">
-          <img>
-          <div class = "blgdesc">
-            <div class = "topic">
-              <h3 class = "redcolor">Expert Speak</h3>
-            </div>
-            <h3 class = "title">Cogoport: A Global Trade Platform</h3>
-            <p>Cogoport leverages technology and caters to enterprises of all sizes. Our solutions improve predictability and enhance human capabilities.</p>
-            <div id = "bottom">
-              <div id = "readmore">
-                <p class = "redcolour">Read More</p>
-                <img class = "arrowstk">
+      <div class = "blog">
+        <h1>Blogs</h1>
+        <div class = "blogs">
+          <div class = "blogctnr">
+            <img src = "blg.jpg">
+            <div class = "blgdesc">
+              <div class = "topic">
+                <h3 class = "redcolor">Expert Speak</h3>
               </div>
-              <h5 class = "greycolor">03 July, 2023</h5>
+              <h3 class = "title">Cogoport: A Global Trade Platform</h3>
+              <p>Cogoport leverages technology and caters to enterprises of all sizes. Our solutions improve predictability and enhance human capabilities.</p>
+              <div id = "bottom">
+                <div id = "readmore">
+                  <p class = "redcolor">Read More<i class="fa-solid fa-arrow-right-long" style="color: #ff0000; margin:10px;"></i></p>
+                </div>
+                <h5 class = "greycolor">03 July, 2023</h5>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class = "blogctnr">
-          <img>
-          <div class = "blgdesc">
-            <div class = "topic">
-              <h3 class = "redcolor">Expert Speak</h3>
-            </div>
-            <h3 class = "title">Cogoport: A Global Trade Platform</h3>
-            <p>Cogoport leverages technology and caters to enterprises of all sizes. Our solutions improve predictability and enhance human capabilities.</p>
-            <div class = "bottom">
-              <div class = "readmore">
-                <p class = "redcolor">Read More</p>
-                <img class = "arrowstk1">
+          <div class = "blogctnr">
+            <img src = "blg.jpg">
+            <div class = "blgdesc">
+              <div class = "topic">
+                <h3 class = "redcolor">Expert Speak</h3>
+              </div>    
+              <h3 class = "title">Cogoport: A Global Trade Platform</h3>
+              <p>Cogoport leverages technology and caters to enterprises of all sizes. Our solutions improve predictability and enhance human capabilities.</p>
+              <div class = "bottom">
+                <div class = "readmore">
+                  <p class = "redcolor">Read More<i class="fa-solid fa-arrow-right-long" style="color: #ff0000; margin:10px;"></i></p>
+                </div>
+                <h5 class = "greycolor">03 July, 2023</h5>
               </div>
-              <h5 class = "greycolor">03 July, 2023</h5>
             </div>
           </div>
-        </div>
 
-        <div class = "blogctnr">
-          <img>
-          <div class = "blgdesc">
-            <div class = "topic">
-              <h3 class = "redcolor">Expert Speak</h3>
-            </div>
-            <h3 class = "title">Cogoport: A Global Trade Platform</h3>
-            <p>Cogoport leverages technology and caters to enterprises of all sizes. Our solutions improve predictability and enhance human capabilities.</p>
-            <div class = "bottom2">
-              <div class = "readmore">
-                <p class = "redcolor">Read More</p>
-                <img class = "arrowstk">
+          <div class = "blogctnr">
+            <img src = "blg.jpg">
+            <div class = "blgdesc">
+              <div class = "topic">
+                <h3 class = "redcolor">Expert Speak</h3>
               </div>
-              <h5 class = "greycolor">03 July, 2023</h5>
+              <h3 class = "title">Cogoport: A Global Trade Platform</h3>
+              <p>Cogoport leverages technology and caters to enterprises of all sizes. Our solutions improve predictability and enhance human capabilities.</p>
+              <div class = "bottom2">
+                <div class = "readmore">
+                  <p class = "redcolor">Read More<i class="fa-solid fa-arrow-right-long" style="color: #ff0000; margin:10px;"></i></p>
+                </div>
+                <h5 class = "greycolor">03 July, 2023</h5>
+              </div>
             </div>
           </div>
         </div>
@@ -352,6 +383,7 @@
         </div>
         <br>
       </div>
+    </div>
     </div>
 
     <div id = "ports">
@@ -396,8 +428,8 @@
         </div>
 
         <div class = "list">
+          <br>
           <h5>Supply Chain Solutions</h5>
-
           <a id = "ca">CogoAssured</a>
           <br>
           <a id = "fl">Fulfillment Logistics</a>
@@ -445,7 +477,7 @@
           <a id = "pta">Personal Trade Assistant</a>
         </div>
 
-        <div class = "list">
+        <div class = "list" style = "margin-right: 60px;">
           <h4 class = "underline">Company</h4>
           <a id = "au">About us</a>
           <br>
@@ -483,7 +515,7 @@
         </div>
       </div>
 
-      <div class = "alllist ochrebg" style = "padding-top: 10px">
+      <div class = "alllist darkyellowbg" style = "padding-top: 10px">
         <div id = "port1" class = "list"  style = "margin-left: 30px; margin-right: 250px;">
           <a class = "no">Mandideep(IN) to Port Said West</a><br>
           <a class = "no">Mandideep(IN) to Mombasa</a><br>
@@ -523,8 +555,10 @@
         </div>
       </div>
 
-      <div id = "foot">
-        <h6 style = "margin-left: 20px;">© 2023 Cogo Universe PTE. All rights reserved.</h6>
+      <div id = "foot" class = "darkyellowbg">
+        <div>
+          <h6 style = "margin-left: 20px;">© 2023 Cogo Universe PTE. All rights reserved.</h6>
+        </div>
         <div class = "ctnr">
           <a class = "no"><h5>Terms &amp; Conditions | </h5></a>
           <a class = "no"><h5>Cookie Policy | </h5></a>
@@ -536,9 +570,12 @@
         </div>
         <a><img id = "linkedin" src = "li.ico" style ="margin-left:20px;"></a>
         <a><img id = "fb" src = "fb.ico"></a>
-        <a><img id = "insta" src = "insta.ico"></a>
+        <a><img id = "insta" src = "insta.ico" style = "margin-right: 0px;"></a>
       </div>
-
+      <div id = "login2">
+        <div><button id = "loginbutton2" class = "ochrebg"><img id ="smiley2" src="smile.png">login</button></div>
+        <div><button id = "signupbutton2" class = "redbg"><strong>Sign Up</strong></button></div>
+      </div>
     </div>
     <a class = "float"><i class="fa fa-whatsapp my-float"></i><br style = "height: 0.5rem"><span style = "font-size: 15px; font-weight: 700;">WhatsApp Us!</span></a>
     

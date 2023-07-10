@@ -2,6 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Ubuntu', sans-serif;
+    margin: 0;
 }
 
 .yellowcolour{
@@ -22,6 +23,10 @@ body {
 
 .yellowbg{
     background-color: yellow;
+}
+
+.darkyellowbg{
+    background-color: #ffbc03;
 }
 
 .greybg {
@@ -93,16 +98,16 @@ body {
     flex-direction: row;
 }
 .wid150{
-    width: 150px;
+    width: 14.56vw;
 }
 .wid110{
-    width: 110px;
+    width: 10.67vw;
 }
 .wid160{
-    width: 160px;
+    width: 15.53vw;
 }
 .wid230{
-    width: 230px;
+    width: 22.33vw;
 }
 
 #contactinf{
@@ -148,6 +153,15 @@ button {
     display: flex;
     flex-direction: row;
 }
+#whatsicon{
+    height: 35px; 
+    width: 90px; 
+    padding-top: 12px; 
+    padding-left: 12px; 
+    border-top-left-radius: 50px; 
+    border-bottom-left-radius: 50px; 
+    border: 2px solid black;
+}
 
 .whats div input{
     height: 45px; 
@@ -183,8 +197,9 @@ button {
 #stats{
     display: flex; 
     flex-direction: row; 
-    padding-top: 30px; 
-    padding-bottom: 20px;
+    padding-top: 40px; 
+    padding-bottom: 40px;
+    padding-left: 20px;
 }
 #stats div h1{
     font-size: 40px; 
@@ -204,13 +219,28 @@ button {
 /*Products*/
 #products h2{
     text-align: center; 
-    margin-bottom: 20px; 
+    margin-bottom: 40px; 
     padding-top: 20px; 
     font-size: 40px; 
     margin-top: 0px;
 }
+.Productsdesc{
+    display: flex; 
+    flex-direction: row;
+}
+.Productsdesc div h4{
+    font-size: 25px; 
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 300px;
+}
 
-
+.pro{
+    display: flex;
+    flex-direction: row;
+    left: 200px;
+    margin-left: 40px;
+}
 
 .top:on-hover{
     color: red;
@@ -230,12 +260,14 @@ button {
 
 .sqbox h3{
     margin-bottom: 3px;
+    text-align: center;
 }
 
 .sqbox p{
-    padding-left: 15px;
-    margin-top: 10px;
+    padding-left: 5px;
+    bottom: 10px;
     padding-bottom: 5px;
+    text-align:center;
 }
 
 .sqbox img{
@@ -278,6 +310,41 @@ button {
     font-weight: 600;
 }
 /*How it works*/
+#howitworks{
+    background-color: #ffffff; 
+    margin-top:50px;
+}
+#howitworks h1{
+    margin-left: 41vw;
+    font-weight: 700;
+}
+#buttonoptions{
+    margin-left: 25%;
+}
+#buttonoptions button{
+    width: 21vw; 
+    height: 40px; 
+    border-radius:40px;
+    margin:25px;
+}
+.stg{
+    display: flex;
+    flex-direction: row;
+}
+
+.stgbx img{
+    width: 24vw;
+    height: 20vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    margin-left:2vw;
+}
+#laptopdiv img{
+    width: 40vw; 
+    margin-left: 2vw;
+    margin-top: 13vw;
+    height: 25vw;
+}
 
 /*Industries*/
 #industries{
@@ -290,12 +357,14 @@ button {
 }
 #imglist{
     margin-top:50px;
+    display: flex;
+    flex-direction: row;
 }
 #imglist img{
-    width: 120px; 
-    height: 150px; 
-    margin-right: 25px; 
-    margin-left: 25px;
+    width: 10vw; 
+    height: 12vw; 
+    margin-right: 2vw; 
+    margin-left: 2vw;
 }
 
 /*Book*/
@@ -340,18 +409,40 @@ button {
 }
 
 /*Blogs*/
-.blogctnr {
+.blogs{
     display: flex; 
-    flex-direction: row; 
-    border-width: 2px; 
-    border-radius: 5px; 
-    border-color: grey;
+    flex-direction: row;
+}
+.blog{
+    margin-top: 40px;
+}
+.blog h1{
+    font-size: 35px;
+    font-weight: 700;
+    text-align:center;
+}
+.blogctnr{
+    margin: 1vw 1vw 0 1vw;
+    border: 2px solid rgba(114, 112, 112, 0.258);
+    border-radius: 5px;
+}
+.blgdesc {
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+.blogctnr img{
+    width: 30vw;
+    height: 14vw;
 }
 #viewall{
     font-size: 20px; 
-    margin-left: 575px; 
-    margin-right: 575px; 
+    margin-left: 42vw; 
+    margin-right: 42vw; 
     margin-bottom: 40px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 2px solid white;
+    padding: 10px;
 }
 
 /*Subscribe*/
@@ -375,22 +466,20 @@ button {
 }
 #subsc input {
     appearance: none;
-    border: 2px solid black;
+    border: 1px solid black;
     font-size: inherit;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    padding: 5px;
+    padding: 7px;
     width: 300px;
     height: 30px;
-    margin-right: 0px;
 }
 #subsc input {
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
 }
 #subsc button {
     height: 45px;
-    margin-left: 0px;
-    padding-top: 5px;
+    padding-top: 6px;
     font-weight: 600;
     width: 120px;
     border-top-right-radius: 5px;
@@ -400,14 +489,16 @@ button {
 /*Ports*/
 
 /*Alllist*/
-.allist {
-    display: flex; 
+.alllist {
+    display: flex;
     flex-direction: row; 
     flex: wrap; 
     padding-bottom: 20px;
 }
 .list{
-    margin-right: 40px; 
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
 }
 .list a:hover {
     text-decoration: underline;
@@ -427,6 +518,18 @@ button {
     flex-direction: row;
     background-color: #ffbc03;
 }
+
+.ctnr{
+    display: flex;
+    flex-direction: row;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#login2{
+    display: none;
+}
+
 #foot a img{
     width: 20px; margin-top: 20px; margin-left: 10px;
 }
@@ -460,9 +563,488 @@ button {
 
 
 @media only screen and (max-width: 760px){
+    /*Notif*/
+    #closenotif {
+        width: 4.82vw;
+        border-color: red;
+        margin: 1vw;
+        background-position: right;
+    }
+
+    #notif {
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding-left: 4.82vw;
+    }
+
+    #logoy {
+        width: 20px; 
+        height: 20px; 
+        margin-top: 13px;
+    }
+
+    #cross {
+        padding-left: 26vw;
+    }
+
+    /*tline*/
+    #tline {
+        background-color: #fbdb04;
+        display: grid;
+        grid-template-columns: 200px;
+        grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    }
+    #nm {
+        height: 80px; 
+        margin-right: 50px;
+    }
+
+    .ddlist{
+        display: none;
+    }
+
+    #login {
+        display: none; 
+    }
+    .wid150{
+        width: 150px;
+    }
+    .wid110{
+        width: 110px;
+    }
+    .wid160{
+        width: 160px;
+    }
+    .wid230{
+        width: 230px;
+    }
+
+    #contactinf{
+        margin-right: 40px; 
+        padding-top: 15px; 
+        width: 140px;
+    }
+    #login div button img{
+        height: 27px; 
+        margin-right: 10px;
+    }
+    #loginbutton{
+        border-color: #fbdb04; 
+        width: 90px; 
+        height: 35px;
+        padding-bottom:5px;
+    }
+    #signupbutton{
+        color: white; 
+        width: 80px; 
+        height: 35px; 
+        border-radius: 5px;
+    }
+
+    button {
+        margin: 5px;
+    }
+
+    /*banner*/
+    #banner {
+        padding-left: 50px;
+        margin: 0px;
+        display: flex; 
+        flex-direction: row; 
+        height: 400px;
+    }
+
+    .whats{
+        height: 40px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+    }
+    
+
+    .whats div input{
+        height: 45px; 
+        width: 300px; 
+        padding-left: 50px; 
+        font-size: 18px; 
+        outline: none; 
+        border-top-right-radius: 50px; 
+        border-bottom-right-radius: 50px; 
+        border: 2px solid rgb(0, 0, 0);
+    }
+
+    .whats div button{
+        position: absolute;
+        right: 8px;
+        margin-top: 10px;
+        padding: 8px 12px;
+        cursor: pointer;
+        border-radius: 50px;
+        border: 1px solid gray;
+        outline: none;
+        background: #03e64b;
+        color: white;
+    }
+
+    .whats button:hover{
+        background: #00ff00a4;
+    }
+
+    /*Mainbody*/
+
+    /*stats*/
+    #stats{
+        margin-left: 10vw;
+        display: grid; 
+        grid-template-columns: 200px 200px;
+        width: 200px;
+        padding-top: 30px; 
+        padding-bottom: 20px;
+    }
+    #stats div h1{
+        font-size: 40px; 
+        text-align: center;
+    }
+
+    /*motto2*/
     #motto2 {
         display: flex;
         flex-direction: column-reverse;
     }
+    #m2left{
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    #m2left div h1{
+        text-align: center;
+    }
+    #m2right{
+        width: 75%;
+        margin-left: 25vw;
+    }
+    #m2right img{
+        width: 40vw;
+    }
+
+    /*Products*/
+    #products h2{
+        text-align: center; 
+        margin-bottom: 20px; 
+        padding-top: 20px; 
+        font-size: 40px; 
+        margin-top: 0px;
+    }
+    .Productsdesc{
+        display: flex;
+        flex-direction: column;
+    }
+    .Productsdesc div h4{
+        font-size: smaller;
+    }
+    .pro{
+        display: grid;
+        grid-template-columns: 200px 200px;
+        margin-left: 25vw;
+    }
+
+    .top:on-hover{
+        color: red;
+    }
+    .sqbox {
+        width: 180px;
+        height: 180px;
+        margin: 10px;
+        border: 1px solid rgb(181, 197, 181);
+        border-radius: 8px;
+        background-color: white;
+    }
+
+    .sqbox:hover {
+        border: solid rgb(255, 0, 0);
+    }
+
+    .sqbox h3{
+        margin-bottom: 2px;
+    }
+
+    .sqbox p{
+        padding-left: 15px;
+        margin-top: 10px;
+        padding-bottom: 5px;
+
+    }
+
+    .sqbox img{
+        width: 80px; 
+        height: 80px; 
+        padding-left: 50px;
+    }
+
+    /*Trusted By*/
+    #trusted{
+        margin-top: 50px; 
+        margin-bottom: 60px;
+    }
+    #partnerimg{
+        display: flex; 
+        flex-direction: row;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #partnerimg div img{
+        width: 80px; 
+        height: 80px; 
+        margin-left: 20px; 
+        margin-right: 20px;
+    }
+
+    /*Supply Chain at Next Level*/
+    #scnl{
+        display: flex; 
+        flex-direction: column; 
+        padding: 30px 0;
+    }
+    #scnl div h1{
+        margin-left: 5vw;
+    }
+    #getstarted{
+        margin-top: 20px; 
+        margin-left: 10vw; 
+        width: 130px; 
+        height: 40px; 
+        border-color: #ee3425;
+        border-radius: 5px; 
+        font-weight: 600;
+    }
+    /*How it works*/
+    #howitworks{
+        background-color: #ffffff; 
+        margin-top:50px;
+    }
+    #howitworks h1{
+        margin-left: 37vw;
+        font-weight: 700;
+    }
+    #buttonoptions{
+        margin-left: 23%;
+    }
+    #buttonoptions button{
+        width: 21vw; 
+        height: 40px; 
+        border-radius:40px;
+        margin:25px;
+    }
+    .stg{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .stgbx img{
+        width: 60vw;
+        height: 48vw;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+    #laptopdiv{
+        flex: -10;
+    }
+    #laptopdiv img{
+        width: 60vw; 
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+        height: 38vw;
+    }
+    
+
+
+    /*Industries*/
+    #industries{
+        padding-bottom: 100px; 
+        padding-top: 20px;
+    }
+    #industries h1{
+        text-align: center; 
+        font-weight: 600
+    }
+    #imglist{
+        margin-top:50px;
+        display: grid;
+        grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+    }
+    #imglist img{
+        width: 15vw; 
+        height: 18vw; 
+        margin-right: 2vw; 
+        margin-left: 2vw;
+    }
+
+    /*Book*/
+    #book{
+        display: flex; 
+        flex-direction: column-reverse; 
+        padding-bottom: 30px; 
+        padding-top: 30px;
+    }
+    #bkleft{
+        margin-left: 7vw;
+    }
+    #getst {
+        font-size: 15px; 
+        font-weight:600; 
+        background-color: #ee3425; 
+        color: white; 
+        width: 120px; 
+        height: 50px; 
+        border-radius: 5px;
+    }
+    #bkright{
+        margin-left: 35vw;
+    }
+
+    /*Know More*/
+    #growfast{
+        display: flex; 
+        flex-direction: column;
+    }
+    #gfleft {
+        margin-left: 5vw;
+    }
+    #knowmore2{
+        margin-top: 30px;
+        margin-bottom: 10px;
+        margin-left: 6vw; 
+        border-color: #ee3425; 
+        border-radius: 5px; 
+        width: 120px; 
+        height: 40px; 
+        padding: 4 16px;
+    }
+
+    /*Blogs*/
+    .blogs{
+        display: flex; 
+        flex-direction: column; 
+    }
+    .blogctnr{
+        border-width: 2px; 
+        border-radius: 5px; 
+        border-color: grey;
+    }
+    #viewall{
+        font-size: 20px; 
+        margin-left: 40vw; 
+        margin-right: 40vw; 
+        margin-bottom: 40px;
+        border-radius: 5px;
+        border: 2px solid white;
+        padding: 10px;
+    }
+
+    /*Subscribe*/
+
+    #subscribe{
+        padding-bottom: 50px;
+        padding-top: 20px;
+    }
+    #subs{
+        display: flex; 
+        flex-direction: column;
+    }
+
+    #subsleft{
+        display: none;
+    }
+
+    #subsright{
+        margin-left: 20vw; 
+        margin-top: 20px;
+    }
+    #subsc input {
+        appearance: none;
+        border: 2px solid black;
+        font-size: inherit;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        padding: 5px;
+        width: 300px;
+        height: 30px;
+        margin-right: 0px;
+    }
+    #subsc input {
+        margin-bottom: 1rem;
+    }
+    #subsc button {
+        height: 45px;
+        margin-left: 0px;
+        padding-top: 5px;
+        font-weight: 600;
+        width: 120px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    /*Ports*/
+
+    /*Alllist*/
+    .alllist {
+        display: flex;
+        flex-direction: row; 
+        flex: wrap; 
+        padding-bottom: 20px;
+    }
+    .list{
+        margin-right: 4vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .list a:hover {
+        text-decoration: underline;
+    }
+    #port1, #port2, #port3 {
+        display: none;
+        padding-bottom: 0px;
+    }
+
+    /*Foot*/
+
+    #foot {
+        margin-top: 0px;
+        display: flex;
+        flex: wrap;
+        flex-direction: column;
+        background-color: #ffbc03;
+    }
+
+    .ctnr{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    #foot a img{
+        display: none;
+    }
+    #login2 div button img{
+        height: 27px; 
+        margin-right: 10px;
+    }
+    #loginbutton2{
+        border-color: #ffbc03; 
+        width: 90px; 
+        height: 35px;
+        padding-bottom:5px;
+    }
+    #signupbutton2{
+        color: white; 
+        width: 80px; 
+        height: 35px; 
+        border-radius: 5px;
+    }
+    .float{
+        display: none;
+    }
+    
 }
   
