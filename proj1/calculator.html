@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="calculator.css" type="text/css">
+    <title>Calculator App</title>
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"></script>
+    <script src ="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"></script>
+</head>
+
+
+<body>
+	<table id="calc">
+		<tr>
+			<td colspan="3"><input type="text" id="result"></td>
+			<td><input type="button" id = "clear" value="c" onclick="clr()" /> </td>
+		</tr>
+		<tr>
+
+			<td><input type="button" value="1" onclick="prnt('1')"onkeydown="enterinp(event)"> </td>
+			<td><input type="button" value="2" onclick="prnt('2')"onkeydown="enterinp(event)"> </td>
+			<td><input type="button" value="3" onclick="prnt('3')"onkeydown="enterinp(event)"> </td>
+			<td><input type="button" value="/" onclick="prnt('/')"onkeydown="enterinp(event)"> </td>
+		</tr>
+		<tr>
+			<td><input type="button" value="4" onclick="prnt('4')"onkeydown="enterinp(event)"> </td>
+			<td><input type="button" value="5" onclick="prnt('5')"onkeydown="enterinp(event)"> </td>
+			<td><input type="button" value="6" onclick="prnt('6')"onkeydown="enterinp(event)"> </td>
+			<td><input type="button" value="*" onclick="prnt('*')"onkeydown="enterinp(event)"> </td>
+		</tr>
+		<tr>
+			<td><input type="button" value="7" onclick="prnt('7')"onkeydown="enterinp(event)"> </td>
+			<td><input type="button" value="8" onclick="prnt('8')"onkeydown="enterinp(event)"> </td>
+			<td><input type="button" value="9" onclick="prnt('9')"onkeydown="enterinp(event)"> </td>
+			<td><input type="button" value="-" onclick="prnt('-')"onkeydown="enterinp(event)"> </td>
+		</tr>
+		<tr>
+			<td><input type="button" value="0" onclick="prnt('0')"onkeydown="enterinp(event)"> </td>
+			<td><input type="button" value="." onclick="prnt('.')"onkeydown="enterinp(event)"> </td>
+			<td><input type="button" id = "solve" value="=" onclick="solve()"></td>
+
+			<td><input type="button" value="+" onclick="prnt('+')"onkeydown="enterinp(event)"> </td>
+		</tr>
+	</table>
+
+	<script>
+		function prnt(val) {
+			document.getElementById("result").value += val
+		}
+
+		function enterinp(event) {
+			if (event.key == '0' || event.key == '1'
+				|| event.key == '2' || event.key == '3'
+				|| event.key == '4' || event.key == '5'
+				|| event.key == '6' || event.key == '7'
+				|| event.key == '8' || event.key == '9'
+				|| event.key == '+' || event.key == '-'
+				|| event.key == '*' || event.key == '/')
+				document.getElementById("result").value += event.key;
+		}
+
+		var cal = document.getElementById("calc");
+		cal.onkeyup = function (event) {
+			if (event.keyCode === 13) {
+				console.log("Enter");
+				let x = document.getElementById("result").value
+				console.log(x);
+				solve();
+			}
+		}
+
+		function solve() {
+			let x = document.getElementById("result").value
+			let y = math.evaluate(x)
+			document.getElementById("result").value = y
+		}
+
+		function clr() {
+			document.getElementById("result").value = ""
+		}
+	</script>
+</body>
+
+</html>
