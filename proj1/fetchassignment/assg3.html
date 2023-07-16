@@ -19,6 +19,12 @@
       <button id = "delsel">Delete Selected Item</button>
       <button id = "deletealltasks" onclick="deleteAll()">Delete All</button>
     </div>
+    <div>
+      <input type="text" id = "idedit" placeholder="Add id of the task to edit">
+      <input type="text" id = "edit" placeholder="Enter the edited content">
+      <button id = "editsel">Edit Selected Item</button>
+      <button id = "reset">Reset</button>
+    </div>
   </div>
 
   <ul id="taskList"></ul>
@@ -27,6 +33,25 @@
 
     let tasks = [];
     var ctr = 0;
+    var res = "";
+    var resid = 0;
+    fetch('https://jsonplaceholder.typicode.com/todos')
+    .then((response) => {
+        if (!response.ok) {
+          throw new Error('Network response was not OK');
+        }
+        return response.json();
+      })
+      .then((data) => {
+        data.forEach((item)=>{
+          tasks.push({task:`${item.title}`});
+          ctr++;
+        })
+        console.log(data);
+      })
+      .catch(error => {
+        console.log('Error:', error.message);
+      });
     function loadAll(){
     fetch('https://jsonplaceholder.typicode.com/todos')
     .then((response) => {
@@ -81,6 +106,29 @@
         tasks = [];
         ctr = 0;
     }
+
+    document.querySelector("#editsel").addEventListener("click", function(){
+      const tasktoedit = document.querySelector("#idedit");
+      const t2e = tasktoedit.value.trim();
+      const edited = document.querySelector("#edit");
+      const ed = edited.value.trim();
+      const te = parseInt(t2e,10);
+      res = tasks[te].task;
+      tasks[te].task = ed;
+      resid = te;
+      tasktoedit.value = "";
+      edited.value = "";
+      const taskList = document.getElementById("taskList");
+      taskList.innerHTML = "";
+      displayAllTasks();
+    });
+
+    document.querySelector("#reset").addEventListener("click",function(){
+      tasks[resid].task = res;
+      const taskList = document.getElementById("taskList");
+      taskList.innerHTML = "";
+      displayAllTasks();
+    });
 
     function displayAllTasks() {
       const taskList = document.getElementById("taskList");
