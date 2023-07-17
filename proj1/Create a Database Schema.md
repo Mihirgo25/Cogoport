@@ -1,6 +1,5 @@
 Create a Database Schema
 
-
 User Management: The system should support user registration, authentication, and authorization to handle user-specific data such as blog posts, comments, and user profiles.
 
 Blog Posts: The database structure should accommodate storing and retrieving blog posts, including attributes like title, content, publication date, author information, categories, tags, and any associated media files.
