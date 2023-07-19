@@ -18,21 +18,9 @@ function ballhitsbottom(c,r){
     return (ball_x >= bricks[c][r].x-brickpadding)&&(ball_x <= bricks[c][r].x+brickwidth+brickpadding)&&(ball_y+ball_r > bricks[c][r].y-brickpadding)&&(ball_y+ball_r <= bricks[c][r].y+brickheight+brickpadding);
 }
 
-/* function ballhitsright(c,r){
-  return (ball_y >= bricks[c][r].y)&&(ball_y <= bricks[c][r].y+brickheight)&&(ball_x+ball_r > bricks[c][r].x)&&(ball_x+ball_r <= bricks[c][r].x+brickwidth);
-  
-}
-function ballhitsleft(c,r){
-  return (ball_y >= bricks[c][r].y)&&(ball_y <= bricks[c][r].y+brickheight)&&(ball_x+ball_r >= bricks[c][r].x)&&(ball_x+ball_r < bricks[c][r].x+brickwidth);
-} */
-
 function ballhitsbrickvert(c,r){
     return (ballhitstop(c,r)||ballhitsbottom(c,r));
 }
-
-/* function ballhitsbrickhori(c,r){
-  return (ballhitsright(c,r)||ballhitsleft(c,r));
-} */
 
 function createbricks(){
     for(var c = 0; c < brickcolumns; c++){

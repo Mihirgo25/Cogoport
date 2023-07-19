@@ -16,4 +16,4 @@ Search Functionality: Consider incorporating a search feature that enables users
 
 Scalability and Performance: The structure should be designed to handle a high volume of concurrent users, large data sets, and frequent read and write operations, ensuring optimal performance, responsiveness, and scalability as the platform grows.
 
-Data Integrity and Security: Implement measures to ensure data integrity, such as enforcing constraints, avoiding data duplication, and implementing appropriate security measures like encryption and user access controls to protect user data
+Data Integrity and Security: Implement measures to ensure data integrity, such as enforcing constraints, avoiding data duplication, and implementing appropriate security measures like encryption and user access controls to protect user data.
