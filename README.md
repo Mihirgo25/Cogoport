@@ -21,10 +21,6 @@ Here are some of the difficulties I faced while trying to replicate the website.
 12. The Grid of Industries as well as Our Products sections do not match the intended. I was not able to
     do it in exact manner.
 
-# Game Development Assignment
-
-1. I was not able to complete colour changing value fr various kind of bricks.
-2. The Game end message was not doable. I started restarting the game but it is not working.
 
 # Javascript Fetch Assignment
 1. I did not implement delete and edit via clicking on the list item. Instead, I used id as my reference to delete and edit the item.
